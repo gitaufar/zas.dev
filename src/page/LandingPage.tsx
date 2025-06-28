@@ -1,7 +1,9 @@
-import React from 'react'
+import { HomePage } from "../section/HomePage"
 
 export const LandingPage = () => {
   return (
-    <div>LandingPage</div>
+    <div className="h-screen">
+        <HomePage/>
+    </div>
   )
 }
