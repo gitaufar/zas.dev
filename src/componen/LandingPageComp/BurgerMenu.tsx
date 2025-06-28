@@ -5,49 +5,47 @@ type BurgerMenuList = {
   link: string;
 };
 type BurgerMenuProps = {
+  className?: string;
   listMenu?: BurgerMenuList[];
-  isOpen?: boolean;
   size?: number;
   color?: string;
-  onClick?: () => void;
 };
 
 export const BurgerMenu = ({
+  className,
   listMenu,
-  isOpen,
-  onClick,
   color = "black",
   size = 2,
 }: BurgerMenuProps) => {
   const [expandX, setExpandX] = useState(false);
   const [expandY, setExpandY] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     let timeoutId;
 
-  if (isOpen) {
-    setExpandX(true);
-    timeoutId = setTimeout(() => {
-      setExpandY(true);
-    }, 200);
-  } else {
-    setExpandY(false);
-    timeoutId = setTimeout(() => {
-      setExpandX(false);
-    }, 200);
-  }
+    if (isOpen) {
+      setExpandX(true);
+      timeoutId = setTimeout(() => {
+        setExpandY(true);
+      }, 200);
+    } else {
+      setExpandY(false);
+      timeoutId = setTimeout(() => {
+        setExpandX(false);
+      }, 200);
+    }
 
-  return () => {
-    clearTimeout(timeoutId);
-  };
-    
+    return () => {
+      clearTimeout(timeoutId);
+    };
   }, [isOpen]);
 
   return (
     <div
       style={{ width: `${size / 4}rem`, height: `${size / 5}rem` }}
-      className={`relative cursor-pointer`}
-      onClick={onClick}
+      className={`relative cursor-pointer ${className}`}
+      onClick={() => setIsOpen(!isOpen)}
     >
       <div
         style={{ backgroundColor: `${color}` }}
@@ -66,8 +64,8 @@ export const BurgerMenu = ({
       h-[4px] w-full absolute rounded-md transition-all duration-300 ease-in-out
       ${
         isOpen
-          ? "top-[40%] translate-y-1/2 rotate-[-45deg]"
-          : "top-[60%] -translate-y-1/2"
+        ? "top-[40%] translate-y-1/2 rotate-[-45deg]"
+        : "top-[60%] -translate-y-1/2"
       }
     `}
       ></div>
@@ -78,7 +76,9 @@ export const BurgerMenu = ({
         } transition-all duration-300 ease-in-out w-full`}
       >
         <div
-        onClick={(e) => {isOpen ? e.stopPropagation() : {}}}
+          onClick={(e) => {
+            isOpen ? e.stopPropagation() : {};
+          }}
           style={{ backgroundColor: color }}
           className={`
     flex flex-col gap-4 bg-amber-300 origin-top-left rounded-r-md py-2 transition-all duration-300 ease-in-out h-screen w-[50vw] pl-4
