@@ -2,8 +2,8 @@ import { HomePage } from "../section/HomePage"
 
 export const LandingPage = () => {
   return (
-    <div className="h-screen">
+    <main>
         <HomePage/>
-    </div>
+    </main>
   )
 }

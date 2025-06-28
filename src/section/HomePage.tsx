@@ -1,12 +1,12 @@
 export const HomePage = () => {
   return (
-    <section className="bg-gradient-to-r from-[#E5F2FF] to-[#F1E3FF] flex justify-center items-center w-full h-4/5">
+    <section className="bg-gradient-to-r from-[#E5F2FF] to-[#F1E3FF] flex justify-center items-center w-screen h-screen">
       <div className="flex flex-col gap-5">
         <div className="flex flex-col items-center text-center gap-5">
-          <h1 className="font-bold text-7xl max-w-[21ch]">
+          <h1 className="font-bold text-6xl max-w-[21ch]">
             Transform Your Ideas Into Reality
           </h1>
-          <p className=" max-w-[50ch] text-2xl">
+          <p className=" max-w-[50ch] text-xl">
             We partners with startups, businesses, and students to build
             high-quality software solutions that drive innovation and growth
           </p>
