@@ -1,7 +1,8 @@
 
+import { FaCheck } from "react-icons/fa6";
 export const OurServicesPage = () => {
   return (
-    <section className="h-screen flex flex-col justify-center items-center bg-gradient-to-l from-[#E5F2FF] to-[#F1E3FF] gap-10">
+    <section className="h-screen flex flex-col justify-center items-center bg-gradient-to-l from-[#E5F2FF] to-[#F1E3FF] gap-10 w-screen">
       <div className="flex flex-col items-center gap-10">
         <h1 className="font-bold text-5xl">Our Services</h1>
         <p className="max-w-[56ch] text-center text-gray-500">
@@ -19,9 +20,9 @@ export const OurServicesPage = () => {
             functional prototype
           </p>
           <ol>
-            <li>👽Rapid Prototyping</li>
-            <li>👽Market Validation</li>
-            <li>👽Scalable Architecture</li>
+            <li className="flex flex-row items-center gap-1.5"><FaCheck color="#22C55E"/>Rapid Prototyping</li>
+            <li className=" flex flex-row items-center gap-1.5"><FaCheck color="#22C55E"/>Market Validation</li>
+            <li className="flex flex-row items-center gap-1.5"><FaCheck color="#22C55E"/>Scalable Architecture</li>
           </ol>
         </div>
         <div className="flex flex-col bg-gradient-to-r from-white to-[#EEDDFF] p-10 max-w-[44ch] rounded-2xl shadow-2xl gap-5">
@@ -32,9 +33,9 @@ export const OurServicesPage = () => {
             workflows.
           </p>
           <ol>
-            <li>👽Bespoke Development</li>
-            <li>👽Integration Services</li>
-            <li>👽Legacy Modernization</li>
+            <li className="flex flex-row items-center gap-1.5"><FaCheck color="#22C55E"/>Bespoke Development</li>
+            <li className=" flex flex-row items-center gap-1.5"><FaCheck color="#22C55E"/>Integration Services</li>
+            <li className="flex flex-row items-center gap-1.5"><FaCheck color="#22C55E"/>Legacy Modernization</li>
           </ol>
         </div>
         <div className="flex flex-col bg-gradient-to-r from-white to-[#E0EDFF] p-10 max-w-[44ch] rounded-2xl shadow-2xl gap-5">
@@ -45,9 +46,9 @@ export const OurServicesPage = () => {
             work
           </p>
           <ol>
-            <li>👽Project Mentorship</li>
-            <li>👽Technical Guidance</li>
-            <li>👽Code Review</li>
+            <li className="flex flex-row items-center gap-1.5"><FaCheck color="#22C55E"/>Project Mentorship</li>
+            <li className=" flex flex-row items-center gap-1.5"><FaCheck color="#22C55E"/>Technical Guidance</li>
+            <li className="flex flex-row items-center gap-1.5"><FaCheck color="#22C55E"/>Code Review</li>
           </ol>
         </div>
       </div>
