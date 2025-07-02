@@ -33,7 +33,7 @@ function Navbar() {
           <button onClick={() => handleScroll("about")}  className="cursor-pointer hover:text-gray-400 font-semibold"> 
             About
           </button>
-          <button onClick={() => handleScroll("portofolio")}  className="cursor-pointer hover:text-gray-400 font-semibold">
+          <button onClick={() => handleScroll("portfolio")}  className="cursor-pointer hover:text-gray-400 font-semibold">
             Portfolio
           </button>
           <button onClick={() => handleScroll("contact")}  className="cursor-pointer hover:text-gray-400 font-semibold">
