@@ -81,7 +81,7 @@ export const BurgerMenu = ({
           }}
           style={{ backgroundColor: color }}
           className={`
-    flex flex-col gap-4 bg-amber-300 origin-top-left rounded-r-md py-2 transition-all duration-300 ease-in-out h-screen w-[50vw] pl-4
+    flex flex-col gap-4 bg-amber-300 origin-top-left rounded-r-md py-2 transition-all duration-300 ease-in-out w-[50vw] pl-4
     ${isOpen ? "cursor-default" : ""}
     ${expandX ? "scale-x-100" : "scale-x-0"}
     ${expandY ? "scale-y-100" : "scale-y-0"}

@@ -1,25 +1,28 @@
 export const HomePage = () => {
   return (
-    <section className="bg-gradient-to-r from-[#E5F2FF] to-[#F1E3FF] flex justify-center items-center w-screen h-screen">
-      <div className="flex flex-col gap-5">
-        <div className="flex flex-col items-center text-center gap-5">
-          <h1 className="font-bold text-5xl max-w-[21ch]">
+    <section className="min-h-screen w-full bg-gradient-to-r from-[#E5F2FF] to-[#F1E3FF] flex justify-center items-center py-16 px-4 sm:px-6">
+      <div className="flex flex-col gap-8 text-center items-center w-full max-w-4xl">
+        
+        {/* --- Konten Teks --- */}
+        <div className="flex flex-col items-center gap-4">
+          <h1 className="font-extrabold text-4xl sm:text-5xl md:text-6xl text-gray-800">
             Transform Your Ideas Into Reality
           </h1>
-          <p className=" max-w-[50ch] text-lg">
-            We partners with startups, businesses, and students to build
-            high-quality software solutions that drive innovation and growth
+          <p className="max-w-prose text-base sm:text-lg text-gray-700">
+            We partner with startups, businesses, and students to build high-quality software solutions that drive innovation and growth.
           </p>
         </div>
 
-        <div className="flex flex-row justify-center gap-10">
-          <button className="bg-gradient-to-r from-[#4089E9] to-[#6A006E] rounded-4xl py-3 px-5 text-white cursor-pointer hover:scale-110 transition-transform border-2 border-gray-400">
+        {/* --- Konten Tombol --- */}
+        <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mt-4 w-full sm:w-auto">
+          <button className="bg-gradient-to-r from-[#4089E9] to-[#6A006E] rounded-full py-3 px-6 text-white font-semibold cursor-pointer hover:scale-105 transition-transform shadow-lg">
             Start Your Project
           </button>
-          <button className="bg-gradient-to-r from-white to-[#D1DCD7] rounded-4xl py-3 px-5 text-blue cursor-pointer hover:scale-110 transition-transform border-2 border-[#326CBB] text-[#326CBB]">
+          <button className="bg-white rounded-full py-3 px-6 text-[#326CBB] font-semibold cursor-pointer hover:scale-105 transition-transform border-2 border-[#326CBB]">
             View Portfolio
           </button>
         </div>
+        
       </div>
     </section>
   );
