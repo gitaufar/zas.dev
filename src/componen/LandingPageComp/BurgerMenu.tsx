@@ -89,7 +89,7 @@ export const BurgerMenu = ({
         >
           <ul className="flex flex-col gap-2 text-base font-bold">
             {listMenu?.map((item, index) => (
-              <li key={index} className="text-white">
+              <li key={index} className="text-black">
                 <a href={item.link}>{item.name}</a>
               </li>
             ))}
