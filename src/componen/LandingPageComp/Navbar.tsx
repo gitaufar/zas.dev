@@ -5,11 +5,11 @@ import { BurgerMenu } from "./BurgerMenu";
 function Navbar() {
   
   return (
-    <nav className="absolute w-full z-50 flex flex-row items-center bg-transparent">
+    <nav className="absolute w-full z-50 flex flex-row items-center">
       <div className="my-8 px-20 flex flex-row  w-full justify-between"> 
         <img src="/assets/zas.png" alt="logo zas" className="w-30" />
          <button className="hidden lg:flex group py-2 cursor-pointer text-black">
-          <div className="group-hover:scale-150 transition-all font-mono">Order Now</div>
+          <div className="group-hover:scale-115 transition-all font-mono">Order Now</div>
         </button>
         <BurgerMenu className="lg:hidden flex scale-x-[-1]" color="white" size={10}/>
       </div>
