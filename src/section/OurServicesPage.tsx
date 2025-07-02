@@ -2,7 +2,7 @@ import { FaCheck } from "react-icons/fa6";
 
 export const OurServicesPage = () => {
     return (
-        <section className="min-h-screen w-full flex flex-col justify-center items-center bg-gradient-to-l from-[#E5F2FF] to-[#F1E3FF] gap-12 py-16 px-4 sm:px-6 lg:px-8">
+        <section className="min-h-screen w-full flex flex-col justify-center items-center bg-gradient-to-l from-[#E5F2FF] to-[#F1E3FF] gap-12 py-16 px-4 sm:px-6 lg:px-8" id="services">
             {/* --- Bagian Header --- */}
             <div className="flex flex-col items-center gap-4 text-center">
                 <h1 className="font-bold text-4xl sm:text-5xl text-gray-800">

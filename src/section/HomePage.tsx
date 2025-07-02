@@ -1,6 +1,6 @@
 export const HomePage = () => {
   return (
-    <section className="min-h-screen w-full bg-gradient-to-r from-[#E5F2FF] to-[#F1E3FF] flex justify-center items-center py-16 px-4 sm:px-6">
+    <section id="home" className="min-h-screen w-full bg-gradient-to-r from-[#E5F2FF] to-[#F1E3FF] flex justify-center items-center py-16 px-4 sm:px-6">
       <div className="flex flex-col gap-8 text-center items-center w-full max-w-4xl">
         
         {/* --- Konten Teks --- */}

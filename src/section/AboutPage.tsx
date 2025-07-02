@@ -1,6 +1,7 @@
 export const AboutPage = () => {
+    
     return (
-        <section className="min-h-screen w-full flex items-center justify-center bg-gradient-to-r from-[#E5F2FF] to-[#F1E3FF] py-16 px-4 sm:px-6 lg:px-8">
+        <section className="min-h-screen w-full flex items-center justify-center bg-gradient-to-r from-[#E5F2FF] to-[#F1E3FF] py-16 px-4 sm:px-6 lg:px-8" id="about">
             <div className="flex flex-col lg:flex-row justify-center items-center gap-12 lg:gap-20 w-full max-w-7xl">
                 
                 {/* Bagian Gambar */}

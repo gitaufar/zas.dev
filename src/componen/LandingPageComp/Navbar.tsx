@@ -3,6 +3,13 @@ import { BurgerMenu } from "./BurgerMenu";
 
 
 function Navbar() {
+
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
   
   return (
     <nav className="absolute w-full z-50 flex flex-row items-center">
@@ -17,24 +24,23 @@ function Navbar() {
       
       <div className="hidden lg:flex h-fit w-fit mt-8 fixed container mx-auto inset-0 bg-white py-3 px-6 rounded-4xl">
         <ul className="flex justify-center gap-x-10 text-black">
-          <a href="#" className="cursor-pointer hover:text-gray-400 font-semibold">
+          <button onClick={() => handleScroll('home')} className="cursor-pointer hover:text-gray-400 font-semibold">
             Home
-          </a>
-          <a href="#about" className="cursor-pointer hover:text-gray-400 font-semibold">
+          </button>
+          <button onClick={()=>handleScroll("services")}  className="cursor-pointer hover:text-gray-400 font-semibold">
+            Services
+          </button>
+          <button onClick={() => handleScroll("about")}  className="cursor-pointer hover:text-gray-400 font-semibold"> 
             About
-          </a>
-          <a href="#portfolio" className="cursor-pointer hover:text-gray-400 font-semibold">
+          </button>
+          <button onClick={() => handleScroll("portofolio")}  className="cursor-pointer hover:text-gray-400 font-semibold">
             Portfolio
-          </a>
-          <a href="#contact" className="cursor-pointer hover:text-gray-400 font-semibold">
+          </button>
+          <button onClick={() => handleScroll("contact")}  className="cursor-pointer hover:text-gray-400 font-semibold">
             Contact
-          </a>
+          </button>
         </ul>
       </div>
-
-      
-       
-      
     </nav>
   );
 }
